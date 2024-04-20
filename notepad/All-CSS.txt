@@ -1,0 +1,118 @@
+body {
+    background-color: #F5F8FA;
+}
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.d-flex {
+    margin-left: 36px;
+}
+
+#navbarSupportedContent{
+  padding-inline: 10px;
+  padding: 16p;
+}
+
+  /*CSS to add a border to the navbar */
+  .navbar {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+
+/* .navbar navbar-expand-lg navbar-dark bg-dark {
+    padding: 16px;
+} */
+
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+  }
+  
+  .chatbot-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: #343a40;
+    color: #fff;
+    border-radius: 50%;
+    transition: all 0.3s;
+    text-decoration: none;
+  }
+  
+  .chatbot-button:hover {
+    background: #25292e;
+  }
+  .d-flex {
+    margin-left: 36px;
+}
+
+.navbar-expand-lg :last-child {
+    margin-right: 12px;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+}
+
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.chatbot-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: #343a40;
+    color: #fff;
+    border-radius: 50%;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.chatbot-button:hover {
+    background: #25292e;
+}
+
+.footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+  /* Add the following CSS rule to add a hover effect to the background of the navbar */
+  .navbar:hover {
+    background-color: #3b424a;
+  }
+
+  /* Add the following CSS rule to add a hover effect to the button in the navbar */
+  .navbar-nav .nav-link {
+    transition: color 0.3s;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #1da1f2;
+  }
+
+  /* Add the following CSS rule to add a hover effect to the button of the navbar */
+  .navbar-toggler-icon:hover {
+    background-color: #2e3339;
+  }
+
+
+  /* Hover effect for cards */
+.card-body:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}

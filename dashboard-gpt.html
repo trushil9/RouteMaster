@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>RouteBus - Passenger Dashboard</title>
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Custom CSS -->
+      <link href="styles/dashboard.css" rel="stylesheet">
+   </head>
+   <body>
+      <!-- Navigation Menu -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+         <div class="container">
+            <a class="navbar-brand" href="#">RouteBus</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Logout</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+
+
+<!-- Main Content -->
+<div class="container mt-5">
+  <div class="row">
+    <!-- Sidebar -->
+    <div class="col-md-3">
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action active" aria-current="true" data-target="nfc">NFC Account</a>
+        <a href="#" class="list-group-item list-group-item-action" data-target="permission">Permission Rights</a>
+        <a href="#" class="list-group-item list-group-item-action" data-target="account">Account Information</a>
+        <a href="#" class="list-group-item list-group-item-action" data-target="support">Support Service</a>
+      </div>
+    </div>
+            <!-- Main Content Area -->
+
+            <!-- NFC Account -->
+            <div class="col-md-9">
+               <div id="nfc" class="card">
+                  <div class="card-header">
+                     NFC Account
+                  </div>
+                  <div class="card-body">
+                     <h5 class="card-title">Current Token Balance: xyz Tokens</h5>
+                     <p class="card-text">Transaction History:</p>
+                     <ul class="list-group">
+                        <li class="list-group-item">Date: Amount - Description</li>
+                        <!-- Add more transaction history items here -->
+                     </ul>
+                     <p class="card-text mt-3">Past Route Histories:</p>
+                     <table class="table">
+                        <thead>
+                           <tr>
+                              <th>Date</th>
+                              <th>Origin</th>
+                              <th>Destination</th>
+                              <th>Fare</th>
+                              <!-- Add more table headers if needed -->
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td>...</td>
+                              <td>...</td>
+                              <td>...</td>
+                              <td>...</td>
+                              <!-- Add more rows for past route histories -->
+                           </tr>
+                        </tbody>
+                     </table>
+                     <p class="card-text">Subscription Type: Free/Premium</p>
+                  </div>
+               </div>
+            </div>
+            <!-- Permission Rights Section -->
+            <div class="col-md-9 mt-4 ">
+               <div id="permission" class="card mt-4">
+                  <div class="card-header">
+                     Permission Rights
+                  </div>
+                  <div class="card-body">
+                     <h5 class="card-title">Manage NFC Card Permissions:</h5>
+                     <p class="card-text">You can change the permissions of your NFC card using your ID and unique password.</p>
+                     <div class="row">
+                        <div class="col-md-6">
+                           <button type="button" class="btn btn-primary">Block</button>
+                           <button type="button" class="btn btn-danger ml-2">Deactivate</button>
+                        </div>
+                        <div class="col-md-6">
+                           <button type="button" class="btn btn-success">Change Password</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- Account Information Section -->
+            <div class="col-md-9 mt-4">
+               <div id="account" class="card">
+                  <div class="card-header">
+                     Account Information
+                  </div>
+                  <div class="card-body">
+                     <h5 class="card-title">Personal Details</h5>
+                     <p class="card-text">Here you can view and edit your account information.</p>
+                     <ul class="list-group">
+                        <li class="list-group-item">Name: John Doe</li>
+                        <li class="list-group-item">Phone Number: 1234567890</li>
+                        <li class="list-group-item">Email: john@example.com</li>
+                        <li class="list-group-item">Address: 123 Main Street, City, Country</li>
+                     </ul>
+                     <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#editModal">Edit Information</button>
+                  </div>
+               </div>
+            </div>
+            <!-- Edit Information Modal -->
+            <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel" aria-hidden="true">
+               <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                     <div class="modal-header">
+                        <h5 class="modal-title" id="editModalLabel">Edit Account Information</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                     </div>
+                     <div class="modal-body">
+                        <!-- Form for editing account information -->
+                        <form>
+                           <div class="form-group">
+                              <label for="editName">Name</label>
+                              <input type="text" class="form-control" id="editName" value="John Doe">
+                           </div>
+                           <div class="form-group">
+                              <label for="editPhone">Phone Number</label>
+                              <input type="text" class="form-control" id="editPhone" value="1234567890">
+                           </div>
+                           <div class="form-group">
+                              <label for="editEmail">Email</label>
+                              <input type="email" class="form-control" id="editEmail" value="john@example.com">
+                           </div>
+                           <div class="form-group">
+                              <label for="editAddress">Address</label>
+                              <input type="text" class="form-control" id="editAddress" value="123 Main Street, City, Country">
+                           </div>
+                           <button type="submit" class="btn btn-primary">Save Changes</button>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- Support Service Section -->
+            <div class="col-md-9 mt-4">
+               <div id="support" class="card">
+                  <div class="card-header">
+                     Support Service
+                  </div>
+                  <div class="card-body">
+                     <h5 class="card-title">Need Help?</h5>
+                     <p class="card-text">Contact our customer service team for assistance, report issues, or provide feedback.</p>
+                     <ul class="list-group">
+                        <li class="list-group-item">Customer Service Phone: 1800-123-4567</li>
+                        <li class="list-group-item">Email Support: support@routebus.com</li>
+                        <li class="list-group-item">Feedback System: <a href="#">Submit Feedback</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <!-- Content Goes Here -->
+         </div>
+      </div>
+      </div>
+
+
+
+      <!-- Footer -->
+      <footer class="fixed-bottom bg-dark text-light text-center py-3">
+         <div class="container">
+            <p>&copy; 2024 RouteBus. All rights reserved.</p>
+         </div>
+      </footer>
+      <!-- Bootstrap JS (optional) -->
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const sidebarItems = document.querySelectorAll(".list-group-item");
+          sidebarItems.forEach(item => {
+            item.addEventListener("click", function() {
+              // Remove active class from all list items
+              sidebarItems.forEach(item => {
+                item.classList.remove("active");
+              });
+      
+              // Add active class to the clicked list item
+              this.classList.add("active");
+      
+              // Hide all cards
+              const allCards = document.querySelectorAll(".card");
+              allCards.forEach(card => {
+                card.style.display = "none";
+              });
+      
+              // Show the corresponding card
+              const targetId = this.getAttribute("data-target");
+              const targetCard = document.getElementById(targetId);
+              targetCard.style.display = "block";
+            });
+          });
+        });
+      </script>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+   </body>
+</html>

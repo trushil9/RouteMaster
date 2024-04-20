@@ -1,0 +1,62 @@
+Now lets go for designing the Live Bus Tracking Homepage Design where the Inputs:
+
+PNR Number (optional)
+Vehicle Number (e.g., GJ-18-Z-1450) (optional)
+Tripcode (e.g., 0900AHWABDEXP51) (optional)
+Captcha Input
+Design Elements:
+
+make it clear Prominent Search Bar: Allow users to enter any of the following for tracking: PNR number, vehicle number, or tripcode.
+Captcha Integration: Secure the tracking process with a clear and easy-to-read Captcha input field.
+Also below display a real-time map highlighting bus locations with estimated arrival times
+
+Additional Considerations:
+(And once again be consistent on branding elements for reflecting RouteBus identity.)
+Also Option for users to save frequently used vehicles or tripcodes.
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Passenger Dashboard</title>
+  <link rel="stylesheet" href="DashboardPassenger.css">
+</head>
+<body>
+  
+  <!-- Navigation Section -->
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a href="#">
+        <img src="favicon.png" alt="RouteBus Logo">
+      </a>
+    </div>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a href="#" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Bookings</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">NFC Account</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Support</a>
+      </li>
+    </ul>
+    <div class="user-profile">
+      <button class="user-profile-btn">
+        <img src="user-avatar.png" alt="User Avatar">
+      </button>
+      <div class="user-dropdown">
+        <a href="#" class="dropdown-item">Account Settings</a>
+        <a href="#" class="dropdown-item">Logout</a>
+      </div>
+    </div>
+  </nav>
+</body>
+</html>

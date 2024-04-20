@@ -1,0 +1,22 @@
+/* CSS for Marquee Grid View with Animation */
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.marquee-container {
+    overflow-x: hidden; /* Hide overflow to prevent scrollbar */
+    white-space: nowrap;
+    animation: slideIn 10s linear infinite; /* Apply animation to continuously slide the cards */
+}
+
+.marquee-card {
+    display: inline-block;
+    margin-right: 20px; /* Adjust spacing between cards */
+    min-width: 300px; /* Adjust card width as needed */
+    transition: transform 0.3s ease; /* Smooth transition for scaling effect */
+}

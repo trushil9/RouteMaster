@@ -1,0 +1,78 @@
+/* Custom CSS for Dashboard */
+
+body {
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    border: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: #343a40;
+}
+
+.card-text {
+    font-size: 24px;
+}
+
+.list-group-item {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+}
+
+.container {
+    padding-top: 50px;
+}
+
+/* Styling for Income and Expense Chart */
+#incomeExpenseChart {
+    height: 300px;
+}
+
+/* Styling for Vehicle Information */
+.card-body .row {
+    padding: 10px 0;
+}
+
+.card-body p {
+    font-size: 18px;
+}
+
+/* Hover effect for cards */
+.card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding-top: 20px;
+    }
+
+    .card-text {
+        font-size: 20px;
+    }
+
+    .list-group-item {
+        font-size: 16px;
+    }
+
+    #incomeExpenseChart {
+        height: 200px;
+    }
+}
+
+.list-group-item.active {
+    background-color: #007bff;
+    color: #fff;
+  }
+  

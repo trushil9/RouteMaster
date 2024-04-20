@@ -1,0 +1,33 @@
+			Today's Goal : Designing DASHBOARD
+
+
+Dasboard : PASSENGER + ADMIN
+
+(menubar: logout, home) 
+
+1. Passenger
+
+
+a) NFC Account : 
+-xyz Amount of Tokens hold karse, 
+-Transaction History
+-Past Route Histories
+- Subscription Type of the Passenger
+
+
+b) Permission Rights :
+-User can change the permission of the NFC card with their ID and Unique Password
+- Block//Deactivate//Change the credentials
+
+
+c) Account Information
+	(edit permission)
+- Name, Phone Number, Email, Address
+- Can Change the passwords
+
+
+d) Support Service
+- Contact customer service
+- Report Issues
+- Feedback System
+
